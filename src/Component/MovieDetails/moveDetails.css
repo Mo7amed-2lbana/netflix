@@ -1,0 +1,10 @@
+.play {
+    cursor: pointer;
+}
+.play svg{
+    transition: var(--trans);
+}
+
+.play:hover svg{
+    color: #dc3545!important;
+}

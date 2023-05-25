@@ -1,0 +1,14 @@
+.sideBar {
+  width: 90px;
+  z-index: 999999999;
+  background:rgba(0,0,0,.5);
+}
+.sideBar .icon .item {
+  border-bottom: 3px solid transparent;
+  transition: var(--trans);
+  cursor: pointer;
+}
+/* .sideBar .icon svg:hover, */
+.sideBar .icon .item.active {
+  border-bottom: 3px solid #9f070f !important;
+}

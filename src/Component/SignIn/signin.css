@@ -1,0 +1,9 @@
+.signin {
+  background-image: url(../../images/EG-en-20230417-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.signin .frm {
+  z-index: 99999999999999999999999;
+
+}
