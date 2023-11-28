@@ -24,12 +24,12 @@ export default function Register() {
       errors.email = "Invalid Email";
     }
 
-    if (!val.password) {
-      errors.password = "Password is required";
-    } else if (!/^[A-Za-z0-9]{8}$/i.test(val.password)) {
-      errors.passowrd =
-        "Password must be include Uppercase and Lowercase and Number";
+    if (!val.rePassword) {
+      errors.rePassword = "RePassword is required";
+    } else if (val.rePassword !== val.password) {
+      errors.rePassword = "Password and rePassword not match";
     }
+
 
     if (!val.rePassword) {
       errors.rePassword = "RePassword is required";
