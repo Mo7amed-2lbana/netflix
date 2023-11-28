@@ -29,10 +29,10 @@ export default function NavBar({ UserData, handleLogOut }) {
               ) : (
                 <>
                   <Link to={"/signin"}>
-                    <button className="btn btn-danger me-3 ">SignIn</button>
+                    <button className="btn btn-danger me-2 me-md-3 ">SignIn</button>
                   </Link>
                   <Link to={"/register"}>
-                    <button className="btn btn-danger me-3 ">Register</button>
+                    <button className="btn btn-danger me-md-3 ">Register</button>
                   </Link>
                 </>
               )}
