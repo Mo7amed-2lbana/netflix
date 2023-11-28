@@ -24,10 +24,11 @@ export default function Register() {
       errors.email = "Invalid Email";
     }
 
-    if (!val.rePassword) {
-      errors.rePassword = "RePassword is required";
-    } else if (val.rePassword !== val.password) {
-      errors.rePassword = "Password and rePassword not match";
+    if (!val.password) {
+      errors.password = "Password is required";
+    } else if (!/^[A-Za-z0-9]{8}/i.test(val.password)) {
+      errors.password =
+        "Password must be min Length 8 and include Uppercase and Lowercase and Number";
     }
 
 
